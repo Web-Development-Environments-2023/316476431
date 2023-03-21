@@ -6,11 +6,28 @@
 	text-align: right;
 	display: flex;
 	justify-content: space-between;
+	z-index: 9999;
+	background-color: #3c8c5d;
+	padding: 20px;
+	align-items: center;
 } 
+#main-img{
+	margin-top: 60px;
+	width:30%;
+	height:30%;
+}
 #title{
-	color: #047c2a;
-	text-decoration: none;
+    color: #FFFFFF; 
+    text-decoration: none;
+    font-size: 30px;
 	margin-left: 20px;
+}
+#title:hover {
+    color: #FDFEFE; 
+  }
+#profile{
+	width:300px;
+	height:350px;
 }
 nav li {
 	display: inline-block;
@@ -18,32 +35,113 @@ nav li {
 
  } 
 nav a {
-	color: #08bd38;
+	color: #FFFFFF;
 	font-weight: bold;
 	font-size: 16px;
-	padding: 10px;
+	padding: 20px;
 	border-radius: 5px;
 	text-decoration: none;
   }
   
 nav a:hover {
-	background-color: #555;
-  }
+	background-color: #FDFEFE;
+	color: #2ECC71;
+}
 
   body {
-	background-color: lightgray;
+	background-color: rgb(217, 255, 221);
   }
 
   h3{
-	color: #08bd38;
+	color: #3c8c5d;
 	text-align: center;
-	border-bottom: 1px solid #047c2a;
+	border-bottom: 1px solid #3c8c5d;
 	font-size: 26px;
+  }
+  table{
+	text-align: center;
+	border: 1px solid black;
+  }
+  td{
+	padding:20px;
+	border: 1px solid black;
+
   }
 .container{
 	justify-content: center;
 	display: flex;
+	padding: 20px;
 }
 .text{
 	padding: 20px;
 }
+#spa{
+	text-align: right;
+
+}
+#mail{
+	margin-top: 5px;
+	width:40px;
+	height:30px;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 10px;
+  }
+  
+  .grid-item {
+	position: relative;
+  }
+  
+  .grid-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+.grid-item h3 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 10px;
+	margin: 0;
+	font-size: 16px;
+  }
+.paragraph{
+	line-height: 1.5;
+	font-size: 20px;
+  }
+  form {
+	max-width: 500px; 
+	margin: 0 auto; 
+  }
+  
+  label {
+	display: block; 
+	margin-top: 20px; 
+  }
+  
+  input, textarea {
+	width: 100%; 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	resize: none; 
+  }
+  
+  button[type="submit"] {
+	display: block; 
+	margin-top: 20px; 
+	padding: 10px 20px; 
+	background-color: #333; 
+	color: #fff; 
+	border: none; 
+	border-radius: 4px; 
+	cursor: pointer; 
+  }
+  
