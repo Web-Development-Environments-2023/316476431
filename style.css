@@ -49,6 +49,7 @@ nav a:hover {
 }
 
   body {
+	font-family: 'Montserrat', sans-serif;
 	background-color: rgb(217, 255, 221);
   }
 
@@ -144,4 +145,7 @@ nav a:hover {
 	border-radius: 4px; 
 	cursor: pointer; 
   }
-  
+  .emoji:hover {
+	background-color: #000000;
+	cursor: pointer;
+  }

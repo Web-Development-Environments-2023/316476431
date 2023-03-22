@@ -2,6 +2,8 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<script src="https://cdn.ampproject.org/v0/amp-emoji-picker-0.1.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.ampproject.org/v0/amp-emoji-picker-0.1.css">
 
 </head>
 <body>
@@ -183,14 +185,32 @@
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
     <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-  
+    <div>
+      <textarea id="message" name="message" required></textarea>
+      <div class="emoji-list">
+        <span class="emoji">😀</span>
+        <span class="emoji">😍</span>
+        <span class="emoji">👍</span>
+        <span class="emoji">🤔</span>
+        <span class="emoji">👀</span>
+      </div>
+    </div>
     <button type="submit">Send</button>
   </form>
+  
 </div>
 </section>
 
-
+<script>
+  const messageInput = document.querySelector('#message');
+  const emojiList = document.querySelectorAll('.emoji');
+  
+  emojiList.forEach(emoji => {
+    emoji.addEventListener('click', () => {
+      messageInput.value += emoji.innerHTML;
+    });
+  });
+</script>
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
