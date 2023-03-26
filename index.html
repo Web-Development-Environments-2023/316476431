@@ -2,8 +2,6 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
-<script src="https://cdn.ampproject.org/v0/amp-emoji-picker-0.1.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.ampproject.org/v0/amp-emoji-picker-0.1.css">
 
 </head>
 <body>
@@ -37,6 +35,7 @@
         My father, Reuven, influenced me the most in my childhood. Reuven served in the Soviet Union army as conductor of one of the most prominent orchestras. He was a man of great value, and because of his service, we were transported every couple of months or years to another location, so most of my childhood I spent traveling with my family.
         After finishing school, I worked at an electronic manufactory and participated in their handball team. In one game I played, a referee didn't take his eyes off me and only gave fault for my benefit. When the game ended, I thanked him for being so nice to me, and he told me that instead of thanking me come with me on a date, and this man AvrahamVoshinski became my future husband.
         I did "Eliha" to Israel in 1993 to Yeruham and have lived here since then. Today I have two beautiful daughters, four grandchildren, and one great-grandchild. My main hobbies are reading books, listening and singing to music, and mostly being in nature.
+      sfsgsdfg
       </p>
   </div>
     <img id="profile" src="images\profile.jpg" />
@@ -181,7 +180,7 @@
 <section id="contact" class="section">
 <h3>contact me </h3>
 <div class="container">
-  <form action="mailto:denisrize@gmail.com" method="POST" enctype="text/plain">
+  <form action="mailto:your-email@example.com" method="POST" enctype="text/plain">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
     <label for="message">Message:</label>
@@ -201,7 +200,16 @@
 </div>
 </section>
 
-
+<script>
+  const messageInput = document.querySelector('#message');
+  const emojiList = document.querySelectorAll('.emoji');
+  
+  emojiList.forEach(emoji => {
+    emoji.addEventListener('click', () => {
+      messageInput.value += emoji.innerHTML;
+    });
+  });
+</script>
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
